@@ -4,6 +4,9 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { ActionSheet } from './action-sheets/pages';
 import { Alert } from './alerts/pages';
+import { Badge } from './badges/pages';
+import { Button } from './buttons/pages';
+import { Chip } from './chips/pages';
 
 @Component({
   templateUrl: 'template.html'
@@ -31,6 +34,21 @@ export class ComponentsPage {
         title: "Alerts",
         icon: this.icons[Math.floor(Math.random() * this.icons.length)],
         component: Alert
+      },
+      {
+        title: "Badges",
+        icon: this.icons[Math.floor(Math.random() * this.icons.length)],
+        component: Badge
+      },
+      {
+        title: "Buttons",
+        icon: this.icons[Math.floor(Math.random() * this.icons.length)],
+        component: Button
+      },
+      {
+        title: "Chips",
+        icon: this.icons[Math.floor(Math.random() * this.icons.length)],
+        component: Chip
       }
     ];
   }
