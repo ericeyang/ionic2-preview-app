@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Delete Chips
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-chip #chip1>
+        <ion-label>Default</ion-label>
+        <button ion-button clear (click)="delete(chip1)">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+    </ion-chip>
+    <ion-chip #chip2>
+        <ion-icon name="pin"></ion-icon>
+        <ion-label>With Icon</ion-label>
+        <button ion-button clear (click)="delete(chip2)">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+    </ion-chip>
+    <ion-chip #chip3>
+        <ion-avatar>
+            <img src="" alt="">
+        </ion-avatar>
+        <ion-label>With Avatar</ion-label>
+        <button ion-button color="dark" clear (click)="delete(chip3)">
+            <ion-icon name="close-circle"></ion-icon>
+        </button>
+    </ion-chip>
+</ion-content>

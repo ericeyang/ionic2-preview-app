@@ -31,6 +31,10 @@ import { Button as ButtonsInComponents } from '../pages/components/buttons/compo
 
 import { Chip } from '../pages/components/chips/pages';
 import { Chip as TextChip } from '../pages/components/chips/text/pages';
+import { Chip as ColorChip } from '../pages/components/chips/color/pages';
+import { Chip as IconChip } from '../pages/components/chips/icon/pages';
+import { Chip as AvatarChip } from '../pages/components/chips/avatar/pages';
+import { Chip as DeleteChip } from '../pages/components/chips/delete/pages';
 
 @NgModule({
   declarations: [
@@ -62,7 +66,11 @@ import { Chip as TextChip } from '../pages/components/chips/text/pages';
     ButtonsInComponents,
 
     Chip,
-    TextChip
+    TextChip,
+    ColorChip,
+    IconChip,
+    AvatarChip,
+    DeleteChip
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -97,7 +105,11 @@ import { Chip as TextChip } from '../pages/components/chips/text/pages';
     ButtonsInComponents,
 
     Chip,
-    TextChip
+    TextChip,
+    ColorChip,
+    IconChip,
+    AvatarChip,
+    DeleteChip
   ],
   providers: [
     {
